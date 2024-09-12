@@ -17,3 +17,5 @@ resource "aws_instance" "ubuntu_instance" {
   vpc_security_group_ids = [data.aws_security_group.java_sg.id]
  
 }
+
+#add random
