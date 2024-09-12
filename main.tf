@@ -18,4 +18,5 @@ resource "aws_instance" "ubuntu_instance" {
  
 }
 
-#add random
+#add random 
+#add random 
