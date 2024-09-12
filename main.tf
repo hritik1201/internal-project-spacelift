@@ -21,5 +21,3 @@ resource "aws_instance" "ubuntu_instance" {
 
 #Code commit
  
-#Code commit
- 
