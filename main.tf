@@ -18,4 +18,3 @@ resource "aws_instance" "ubuntu_instance" {
  
 }
 
-#add new chnages
