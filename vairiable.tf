@@ -33,7 +33,7 @@ variable "existing_key_name" {
 }
 variable "existing_security_group" {
   type    = string
-  default = "sg-0c84402213547a164"
+  default = "sg-0c84402213547a164_"
 }
 
 #push
