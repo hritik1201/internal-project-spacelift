@@ -3,6 +3,14 @@ variable "instance_name" {
   default = "terraform-demo"
 }
 
+variable "secret_id" {
+    type = string
+    default ="5dUQxQkT2djrzNnzbtR5kEgw0m7hdaMRW+i+jh2F"
+}
+variable "access_id" {
+  type = string
+  default ="AKIATNVEVIKTQFWSAVCB"
+}
 variable "ami_id" {
   type = string
   default = "ami-0522ab6e1ddcc7055"
