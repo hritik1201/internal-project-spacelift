@@ -34,6 +34,15 @@ To destroy:
 terraform destroy
 ```
 
+## Optimizations
+
+- IMDSv2 required (`http_tokens = "required"`), no fallback to IMDSv1
+- Root volume encrypted, deleted on termination
+- SSH CIDR validated — `terraform plan` fails if you try `0.0.0.0/0`
+- Default tags on all resources (Project, Environment, ManagedBy)
+- Outputs: instance ID, public IP, security group ID
+- AWS provider `~> 5.0`, Terraform `>= 1.5.0`
+
 ## Files
 
 - `main.tf` — EC2 instance
@@ -41,4 +50,5 @@ terraform destroy
 - `security.tf` — Security group
 - `variable.tf` — Input variables, no secret defaults
 - `terraform.tfvars.example` — Example values only, no real IDs or keys
-- `terraform.tf` — Required providers
+- `terraform.tf` — Required providers and versions
+- `outputs.tf` — Instance and security group outputs
