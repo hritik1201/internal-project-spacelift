@@ -1,0 +1,6 @@
+region           = "ap-south-1"
+ami_id           = "ami-xxxxxxxxxxxxxxxxx"
+instance_type    = "t2.micro"
+aws_keypair      = "my-key-pair"
+vpc_id           = "vpc-xxxxxxxxxxxxxxxxx"
+allowed_ssh_cidr = "203.0.113.10/32"

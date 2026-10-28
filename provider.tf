@@ -1,8 +1,5 @@
 provider "aws" {
   region = var.region
-    secret_key = var.secret_id
-  access_key = var.access_id
 }
-##
-
-
+# Credentials come from the environment (AWS_PROFILE, SSO, or env vars).
+# Never put access keys in this repo.
